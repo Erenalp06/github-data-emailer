@@ -187,6 +187,8 @@ This endpoint facilitates the creation of a new user and triggers the analysis o
 - Status Code: 200 OK
 - Content-Type: application/json
 
+![Response](response.png)
+
 
 
 
