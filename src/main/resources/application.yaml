@@ -1,0 +1,25 @@
+server:
+  port: 8909
+
+# Mail server
+spring:
+  mail:
+    host: <HOST_NAME> # smtp.gmail.com, smtp.yandex.com, smtp.live.com, smtp.mail.yahoo.com, smtp.mailgun.org, smtp.zoho.com
+    port: <PORT> # 587, 465
+    username: <YOUR_MAIL_SERVER_USERNAME>
+    password: <YOUR_MAIL_SERVER_PASSWORD>
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+# Schedule task
+scheduled:
+  task:
+    initial-delay: 60000 # Initial delay: Specifies the time after which the task will be first executed, in milliseconds. For example, 300000 milliseconds corresponds to 5 minutes.
+    fixed-delay: 300000 # Fixed delay: Specifies the time interval between the completion of one execution and the start of the next, in milliseconds. For example, 3600000 milliseconds corresponds to 1 hour.
+    time-zone: Europe/Istanbul # Time zone: Specifies the time zone in which the cron expression will be resolved. For example, "America/New_York" or "GMT+10".
+
